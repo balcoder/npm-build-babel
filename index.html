@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="no-js">
+<head>
+  <title>Tic Tac Toe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Npm scripts build tools</h1>
+      <p>Uses NPM scripts to automate Babel Prettier and other great build tools</p>
+    </div>
+    <div>
+      <p>This build tool uses all these devDependencies to automate away all the repetive tasks of modern web development. Just use the command line to navigate to the project and run <code>npm run watch:all</code> to start the server and watch all your files for changes. Then make any changes and watch it appear live in the browser</p>
+      <ul>
+        <li>autoprefixer</li>
+        <li>babel-cli</li>
+        <li>babel-preset-env</li>
+        <li>browser-sync</li>
+        <li>imagemin-cli</li>
+        <li>node-sass</li>
+        <li>npm-run-all</li>
+        <li>onchange</li>
+        <li>postcss-cli</li>
+        <li>prettier</li>
+        <li>stylelint</li>
+      </ul>
+    </div>
+    <button type="button"
+      onclick="getList('https://fcctop100.herokuapp.com/api/fccusers/top/recent', myFunction)">Load Content
+    </button>
+    <div id="root"></div>
+    </div>
+  </div>
+
+  <script src="dist/js/main.js"></script>
+
+</body>
+</html>
